@@ -36,17 +36,21 @@ FullData <- cbind(dataSub, dataAct, dataFeat)
 
 
 ### Step 2 - Extract only Mean and Standard Deviation for each Measurement ###
-# Acquire Colums with Mean() or STD() and Update FullData
+# Acquire Colums with Mean() or STD()
 MeanSTD <- dataFeatLabels$V2[grep("(mean|std)\\(\\)", dataFeatLabels$V2)]
+
+# Update FullData
 subsetLabels <- c("Subject", "Activity", as.character(MeanSTD))
 FullData <- subset(FullData, select = subsetLabels)
 
 
 ### Step 3 - Use Descriptive Names to Name Activities in the Dataset ###
-# Read in Activity Labels and Update FullData
+# Read in Activity Labels
 dataActLabels <- read.table(file.path("./data/UCI HAR Dataset", "activity_labels.txt"), header = FALSE)
+
+# Update FullData
 dataActLabels <- as.character(dataActLabels$V2)
-FullData$Activity<- dataActLabels[FullData$Activity]
+FullData$Activity <- dataActLabels[FullData$Activity]
 
 
 ### Step 4 - Appropriately Label the Data Set with Descriptive Variable Names ###
