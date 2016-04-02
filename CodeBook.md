@@ -118,7 +118,13 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita and Xavier Par
           
 =================================================================================================
 
-   Activity: Type of Activity
+   Activity: Type of Activity: 
+   * Walking
+   * Walking Upstairs
+   * Walking Downstairs
+   * Sitting
+   * Standing
+   * Laying
 
 -------------------------------------------------------------------------------------------------
 
