@@ -128,7 +128,7 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita and Xavier Par
         Class:  character
          Mode:  character
          
-  =================================================================================================
+ =================================================================================================
 
    TimeBodyAcc-mean()-X
 
