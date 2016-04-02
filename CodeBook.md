@@ -1,5 +1,5 @@
 #Code Book
-This CodeBook describes the code located in 'run_analysis.R'
+This CodeBook describes the code located in "run_analysis.R"
 
 The Code is split up into 6 sections:
 * Fundamentals: Setting WD and Downloading Files
